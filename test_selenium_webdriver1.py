@@ -21,6 +21,7 @@ driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2
 
 # Verify login by title or dashboard element
 wait.until(EC.title_contains("OrangeHRM"))
+assert "OrangeHRM" in driver.title
 
 print("Login Test Passed")
 
